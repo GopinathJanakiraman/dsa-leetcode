@@ -1,5 +1,18 @@
 import java.util.HashSet;
 
+
+/*
+*Iterate through the array.
+Add every element into a HashSet
+*Pick each number from the array.
+Check whether its previous number (num - 1) exists in the HashSet
+* If the previous number exists, skip the current iteration
+* If num - 1 doesn't exist, the current number is the starting point.
+Reset currLen to 0
+* Increment the number by 1.
+Increment the sequence length
+* Compare the current sequence length with the maximum length found so far
+* */
 public class LongestConsecutiveNumbers {
 
     public int longestConsecutive(int[] nums) {
@@ -19,7 +32,8 @@ public class LongestConsecutiveNumbers {
             currLen=0;
             start = num;
             while(s.contains(num)){
-                end=num; num++;
+                end=num;
+                num++;
                 currLen++;
 
             }

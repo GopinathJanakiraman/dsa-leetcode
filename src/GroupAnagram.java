@@ -8,6 +8,11 @@ public class GroupAnagram {
 
     public List<List<String>> solution(String[] str){
         HashMap<String,List<String>> m = new HashMap<>();
+       /* m.values();
+        m.containsKey();
+        m.entrySet();
+        m.put();*/
+
         for(String s : str){
 
             char[] c = s.toCharArray();
