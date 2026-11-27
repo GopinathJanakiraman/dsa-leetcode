@@ -1,6 +1,7 @@
 # Compiled class file
 *.class
-
+.idea/
+dsa-leetcode.iml
 # Log file
 *.log
 
